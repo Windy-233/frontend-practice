@@ -47,3 +47,11 @@ footer {
     color: #888;
     font-size: 14px;
 }
+input:invalid
+{
+	border:1px solid red;
+}
+input:focus
+{
+	background-color:rgb(203, 246, 248);
+}
