@@ -33,6 +33,6 @@
     background-color: #f8f9fa;
     border-color: #f8f9fa;
 }
-/* .navbar .nav-link {
+.navbar .nav-link, .navbar .nav-link-active {
     color: #0d6efd;
-} */
+}
