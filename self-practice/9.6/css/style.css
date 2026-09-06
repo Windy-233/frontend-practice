@@ -1,6 +1,7 @@
 .header {
     text-align: center;
 }
+/* header元素选择器，对应<header>，.header类选择器，对应<header class="header">，#header ID选择器，对应<header id="header"> */
 .card {
     background-color: #f8f9fa;
     border-color: #f8f9fa;
@@ -36,3 +37,4 @@
 .navbar .nav-link, .navbar .nav-link-active {
     color: #0d6efd;
 }
+/* .navbar .nav-link是一类（一体的），用逗号,分开其中的每个类 */
