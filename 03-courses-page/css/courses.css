@@ -43,3 +43,8 @@ body {
 @media (min-width: 992px) {
     .course-card {padding: 24px; }
 }
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 10px;
+}
