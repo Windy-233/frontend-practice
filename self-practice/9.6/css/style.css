@@ -50,3 +50,50 @@ h2 {
 .card-title {
     font-size: clamp(16px, 3.5vw, 24px);
 }
+@media (prefers-color-scheme: dark) {
+    header {
+        background-color: #1e1e1e;
+        color: #eee;
+    }
+    body {
+        background-color: black;
+        color: #eee;
+    }
+    .container {
+        background-color: #1e1e1e;
+        color: #eee;
+    }
+    .card-1 {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+    .card-2 {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+    .card-3 {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+    .card-4 {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+    .card-5 {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+    .card-6 {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+    .navbar {
+        background-color: #1e1e1e;
+    }
+    .navbar .navbar-brand {
+        color: #eee;
+    }
+    .navbar .nav-link {
+        color: #eee;
+    }
+}
