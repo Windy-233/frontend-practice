@@ -4,7 +4,7 @@ const tip = document.querySelector('#tip');
 const list = document.querySelector('#task-list');
 let tasks = [];
 const render = () => {
-    list.innetHTML = '';
+    list.innerHTML = '';
     if (tasks.length ===0) {
         const li = document.createElement('li');
         li.textContent = '暂无任务';
