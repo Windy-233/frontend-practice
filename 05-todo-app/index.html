@@ -20,8 +20,13 @@
         <input type="text" id="task-input" placeholder="要做什么?">
         <button type="submit">添加</button>
     </form>
+    <div class="filters">
+        <button data-filter="all">全部</button>
+        <button data-filter="active">未完成</button>
+        <button data-filter="done">已完成</button>    
+    </div>
     <p class="tip" id="tip"></p>
     <ul id="task-list"></ul>
-    <script src="app.js"></script>
+    <script src="app.js"></script>  
 </body>
 </html> 
