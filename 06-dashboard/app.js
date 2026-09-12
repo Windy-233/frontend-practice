@@ -84,4 +84,7 @@ const renderLineChart = (data) => {
 window.addEventListener('resize', () => {
     if (barChart) barChart.resize();
 });
+$('#cards').on('click', '.card', function () {
+    $(this).toggleClass('border-primary shadow');
+})
 loadData();
