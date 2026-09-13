@@ -4,8 +4,10 @@ const authorInput = document.querySelector('#author-input');
 const ratingInput = document.querySelector('#rating-input');
 const tip = document.querySelector('#tip');
 const list = document.querySelector('#book-list');
-let books = [];
+const searchInput = document.querySelector('#search-input');
+let books = JSON.parse(localStorage.getItem('books') || '[]');
 let keyword = '';
+const save = () => localStorage.setItem('books', JSON.stringify(books));
 const render = () => {
     list.innerHTML = '';
     const shown = books.filter(b => b.title.includes(keyword));
@@ -45,12 +47,14 @@ form.addEventListener('submit', (e) => {
     tip.textContent = '';
     titleInput.value = '';
     authorInput.value = '';
+    save();
     render();
 });
 list.addEventListener('click', (e) => {
     if (e.target.classList.contains('del')) {
         const id = Number(e.target.dataset.id);
         books = books.filter(b => b.id !== id);
+        save();
         render();
     }
 });
