@@ -13,6 +13,7 @@
         .tip { color: #c00; font-size: 14px; min-height: 20px; margin: 4px 0; }
         ul { list-style: none; padding: 0; }
         li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+        .del { color: #c00; cursor: pointer; margin-left: 12px; }
     </style>
 </head>
 <body>
@@ -30,6 +31,7 @@
         <button type="submit">添加</button>
     </form>
     <p class="tip" id="tip"></p>
+    <input type="text" id="search-input" placeholder="按书名搜索..." style="width:100%; margin-bottom:8px;">
     <ul id="book-list"></ul>
     <script src="app.js"></script>
 </body>

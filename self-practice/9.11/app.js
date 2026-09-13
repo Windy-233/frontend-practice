@@ -5,17 +5,26 @@ const ratingInput = document.querySelector('#rating-input');
 const tip = document.querySelector('#tip');
 const list = document.querySelector('#book-list');
 let books = [];
+let keyword = '';
 const render = () => {
     list.innerHTML = '';
-    if (books.length === 0) {
+    const shown = books.filter(b => b.title.includes(keyword));
+    if (shown.length === 0) {
         const li = document.createElement('li');
-        li.textContent = '暂无书籍';
+        li.textContent = keyword ? '没有匹配的书' : '暂无书籍';
         list.appendChild(li);
         return;
     }
-    books.forEach(book => {
+    shown.forEach(book => {
         const li = document.createElement('li');
-        li.textContent = `${book.title} — ${book.author} — ${'*'.repeat(book.rating)}`;
+        const info = document.createElement('span');
+        info.textContent = `${book.title} — ${book.author} — ${'*'.repeat(book.rating)}`;
+        const del = document.createElement('span');
+        del.textContent = '删除';
+        del.className = 'del';
+        del.dataset.id = book.id;
+        li.appendChild(info);
+        li.appendChild(del);
         list.appendChild(li);
     });
 };
@@ -36,6 +45,17 @@ form.addEventListener('submit', (e) => {
     tip.textContent = '';
     titleInput.value = '';
     authorInput.value = '';
+    render();
+});
+list.addEventListener('click', (e) => {
+    if (e.target.classList.contains('del')) {
+        const id = Number(e.target.dataset.id);
+        books = books.filter(b => b.id !== id);
+        render();
+    }
+});
+searchInput.addEventListener('input', (e) => {
+    keyword = e.target.value.trim();
     render();
 });
 render();
