@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图书收藏管理</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: sans-serif; max-width: 520px; margin: 24px auto; padding: 0 16px; }
+        form { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+        input, select, button { padding: 6px 10px; font-size: 15px; }
+        input[type="text"] { flex: 1; min-width: 120px; }
+        .tip { color: #c00; font-size: 14px; min-height: 20px; margin: 4px 0; }
+        ul { list-style: none; padding: 0; }
+        li { padding: 8px 0; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+    <h1>图书收藏管理</h1>
+    <form id="add-form">
+        <input type="text" id="title-input" placeholder="书名">
+        <input type="text" id="author-input" placeholder="作者">
+        <select id="rating-input">
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <button type="submit">添加</button>
+    </form>
+    <p class="tip" id="tip"></p>
+    <ul id="book-list"></ul>
+    <script src="app.js"></script>
+</body>
+</html>
