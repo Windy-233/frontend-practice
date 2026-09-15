@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>校园数据看板</title>
+  <style>
+    body { font-family: sans-serif; max-width: 1000px; margin: 24px auto; padding: 0 16px; }
+    .chart-box { height: 320px; border: 1px solid #eee; margin-bottom: 20px; }
+    #status { color: #c00; }
+  </style>
+</head>
+<body>
+  <h1>校园数据看板</h1>
+  <p id="status"></p>
+  <p id="source"></p>
+  <h2>各月借阅量（ECharts）</h2>
+  <div id="bar-chart" class="chart-box"></div>
+  <h2>座位占用率（Chart.js）</h2>
+  <div class="chart-box"><canvas id="line-chart"></canvas></div>
+  <script src="libs/jquery-4.0.0.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
