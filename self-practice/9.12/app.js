@@ -14,8 +14,20 @@ const loadData = async () => {
     }
     $('#status').hide();
     $('#source').text(books.title + ' · ' + books.source);
-  } catch (err) {
+    renderBar(books);
+} catch (err) {
     $('#status').text('加载失败：' + err.message).show();
   }
+};
+const renderBar = (data) => {
+  const chart = echarts.init(document.querySelector('#bar-chart'));
+  chart.setOption({
+    title: { text: '各月借阅量（册）', left: 'center' },
+    tooltip: { trigger: 'axis' },
+    xAxis: { data: data.months },
+    yAxis: {},
+    series: [{ type: 'bar', data: data.series[0].counts }]
+  });
+  window.addEventListener('resize', () => chart.resize());
 };
 loadData();
