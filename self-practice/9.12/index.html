@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>校园数据看板</title>
+  <link href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body { font-family: sans-serif; max-width: 1000px; margin: 24px auto; padding: 0 16px; }
     .chart-box { height: 320px; border: 1px solid #eee; margin-bottom: 20px; }
@@ -13,6 +14,7 @@
 <body>
   <h1>校园数据看板</h1>
   <p id="status"></p>
+  <section class="row g-3 mb-4" id="cards"></section>
   <p id="source"></p>
   <h2>各月借阅量（ECharts）</h2>
   <div id="bar-chart" class="chart-box"></div>

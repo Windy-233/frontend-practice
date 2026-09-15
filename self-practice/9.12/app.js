@@ -21,11 +21,27 @@ const loadData = async () => {
     state.rooms = rooms;
     $('#status').hide();
     $('#source').text(books.title + ' · ' + books.source);
+    renderCards(books);
     renderBar(books);
     renderLine(rooms);
 } catch (error) {
     $('#status').text('加载失败：' + error.message).show();
 }
+};
+const renderCards = (data) => {
+  data.series.forEach(s => {
+    const total = s.counts.reduce((sum, n) => sum + n, 0);
+    $('#cards').append(`
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title h6">${s.category}</h3>
+            <p class="card-text fs-4">${total}</p>
+          </div>
+        </div>
+      </div>
+    `);
+  });
 };
 const renderBar = (data) => {
    barChart = echarts.init(document.querySelector('#bar-chart'));
@@ -74,5 +90,7 @@ const renderLine = (rooms) => {
 window.addEventListener('resize', () => {
     if (barChart) barChart.resize();
 });
-
+$('#cards').on('click', '.card', function () {
+    $(this).toggleClass('border-primary shadow');
+});
 loadData();
