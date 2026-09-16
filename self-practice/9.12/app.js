@@ -10,6 +10,10 @@ const loadData = async () => {
       fetch('data/studyrooms.json')
     ]);
     console.log('并行耗时：', Date.now() - t1, 'ms');
+    const t2 = Date.now();
+  await fetch('data/books.json').then(r => r.json());
+  await fetch('data/studyrooms.json').then(r => r.json());
+  console.log('串行耗时：', Date.now() - t2, 'ms');
     if (!booksRes.ok || !roomsRes.ok) {
             throw new Error('HTTP ' + booksRes.status);
         }
