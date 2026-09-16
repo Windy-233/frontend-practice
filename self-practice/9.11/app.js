@@ -62,4 +62,13 @@ searchInput.addEventListener('input', (e) => {
     keyword = e.target.value.trim();
     render();
 });
+document.querySelector('#export-btn').addEventListener('click', () => {
+    const blob = new Blob([JSON.stringify(books, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'books.json';
+    a.click();
+    URL.revokeObjectURL(url);
+});
 render();
