@@ -7,7 +7,13 @@ const list = document.querySelector('#book-list');
 const searchInput = document.querySelector('#search-input');
 let books = JSON.parse(localStorage.getItem('books') || '[]');
 let keyword = '';
-const save = () => localStorage.setItem('books', JSON.stringify(books));
+const save = () => {
+    try {
+        localStorage.setItem('books', JSON.stringify(books));
+    } catch (e) {
+        alert('保存失败：' + e.message);
+    }
+};
 const render = () => {
     list.innerHTML = '';
     const shown = books.filter(b => b.title.includes(keyword));
