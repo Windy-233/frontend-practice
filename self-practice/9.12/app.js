@@ -4,10 +4,12 @@ let lineChart = null;
 const loadData = async () => {
   $('#status').text('加载中...').show();
   try {
+    const t1 = Date.now();
     const [booksRes, roomsRes] = await Promise.all([
       fetch('data/books.json'),
       fetch('data/studyrooms.json')
     ]);
+    console.log('并行耗时：', Date.now() - t1, 'ms');
     if (!booksRes.ok || !roomsRes.ok) {
             throw new Error('HTTP ' + booksRes.status);
         }
