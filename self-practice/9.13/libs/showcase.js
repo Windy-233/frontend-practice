@@ -39,6 +39,16 @@ geos.forEach((geo, i) => {
 });
 scene.add(items);
 
+const ray = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+window.addEventListener('click', (e) => {
+    mouse.x = (e.clientX / innerWidth) * 2 - 1;
+    mouse.y = -(e.clientY / innerHeight) * 2 + 1;
+    ray.setFromCamera(mouse, camera);
+    const hit = ray.intersectObjects(items.children)[0];
+    if (hit) hit.object.material.color.set(0xffca28);
+});
+
 const animate = () => {
     requestAnimationFrame(animate);
     items.rotation.y += 0.005;
