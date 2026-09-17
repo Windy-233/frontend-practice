@@ -9,6 +9,8 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const controls = new THREE.OrbitControls(camera, renderer.domElement);
+controls.enableZoom = true;
+controls.enableRotate = true;
 
 scene.add(new THREE.AmbientLight(0xffffff, 0.4));
 const dir = new THREE.DirectionalLight(0xffffff, 0.8);
