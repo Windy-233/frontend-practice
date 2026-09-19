@@ -30,7 +30,7 @@ const renderSummary = () => {
             <div class="col-6 col-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="card-title h6 text-primary">${c.label}</h3>
+                        <h2 class="card-title h6 text-primary">${c.label}</h2>
                         <p class="card-text fs-4">${c.value}</p>
                     </div>
                 </div>
