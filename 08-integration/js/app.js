@@ -149,15 +149,20 @@ const renderRooms = () => {
   const list = document.querySelector('#room-list');
   list.innerHTML = '';
   if (shown.length === 0) {
-    list.innerHTML = '<li class="list-group-item">没有符合条件的自习室</li>';
+    list.innerHTML = '<div class="col-12"><p class="text-muted">没有符合条件的自习室</p></div>';
     return;
   }
   shown.forEach(r => {
     list.insertAdjacentHTML('beforeend', `
-      <li class="list-group-item">
-        <span>${r.name} -- ${r.building}${r.floor}层 -- 空余${r.seats - r.occupied}座</span>
-        <span class="badge ${badgeClass[r.status]}">${r.status} : ${r.hours}</span>
-      </li>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title h6">${r.name}</h3>
+            <p class="card-text mb-1">剩余 <strong>${r.seats - r.occupied}</strong> 座位</p>
+            <span class="badge ${badgeClass[r.status]}">${r.status} · ${r.hours}</span>
+          </div>
+        </div>
+      </div>
     `);
   });
 };
