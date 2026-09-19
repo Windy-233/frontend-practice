@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
@@ -28,20 +30,66 @@
     </header>
 
     <main class="container">
-        <section id="homepage" class="mb-4">
-            <h1 class="h3">图书借阅系统</h1>
-            <p class="text-muted">占位符</p>
-            <div class="row g-3" id="summary-cards"></div>
-        </section>
-
         <section id="search" class="mb-4">
-            <h2 class="h5">图书搜索</h2>
-            <p class="text-muted">占位符</p>
+            <h2 class="h5">图书添加和检索</h2>
+
+            <form id="add-form" class="row g-2 mb-3">
+                <div class="col-md-3">
+                    <input type="text" id="title-input" class="form-control" placeholder="书名">
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="author-input" class="form-control" placeholder="作者">
+                </div>
+                <div class="col-md-2">
+                    <input type="text" id="category-input" class="form-control" placeholder="类别">
+                </div>
+                <div class="col-md-2">
+                    <select id="rating-input" class="form-select">
+                        <option value="5">5 星</option>
+                        <option value="4">4 星</option>
+                        <option value="3">3 星</option>
+                        <option value="2">2 星</option>
+                        <option value="1">1 星</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary w-100">添加</button>
+                </div>
+            </form>
+            <p id="tip" class="text-danger"></p>
+
+            <div class="row g-2 mb-3">
+                <div class="col-md-3">
+                    <label for="category-filter" class="form-label">类别</label>
+                    <select id="category-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="科幻">科幻</option>
+                        <option value="文学">文学</option>
+                        <option value="科技">科技</option>
+                        <option value="历史">历史</option>
+                        <option value="经济">经济</option>
+                        <option value="艺术">艺术</option>
+                        <option value="外语">外语</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="rating-filter" class="form-label">评分</label>
+                    <select id="rating-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="5">仅 5 星</option>
+                        <option value="4">4 星及以上</option>
+                        <option value="3">3 星及以上</option>
+                    </select>
+                </div>
+            </div>
+
+            <ul id="book-list" class="list-group"></ul>
         </section>
 
         <section id="stats" class="mb-4">
             <h2 class="h5">借阅情况统计</h2>
-            <p class="text-muted">占位符</p>
+            <p id="status" class="alert alert-warning" style="display:none"></p>
+            <div id="usage-chart" style="height:360px"></div>
         </section>
     </main>
 
@@ -53,4 +101,5 @@
     <script src="libs/echarts.min.js"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

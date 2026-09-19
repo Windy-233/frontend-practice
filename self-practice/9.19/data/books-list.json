@@ -1,0 +1,12 @@
+[
+  { "id": 1, "title": "三体", "author": "刘慈欣", "category": "科幻", "rating": 5 },
+  { "id": 2, "title": "活着", "author": "余华", "category": "文学", "rating": 5 },
+  { "id": 3, "title": "百年孤独", "author": "马尔克斯", "category": "文学", "rating": 4 },
+  { "id": 4, "title": "时间简史", "author": "霍金", "category": "科技", "rating": 4 },
+  { "id": 5, "title": "明朝那些事儿", "author": "当年明月", "category": "历史", "rating": 5 },
+  { "id": 6, "title": "人类简史", "author": "赫拉利", "category": "历史", "rating": 5 },
+  { "id": 7, "title": "围城", "author": "钱钟书", "category": "文学", "rating": 5 },
+  { "id": 8, "title": "经济学原理", "author": "曼昆", "category": "经济", "rating": 4 },
+  { "id": 9, "title": "艺术的故事", "author": "贡布里希", "category": "艺术", "rating": 4 },
+  { "id": 10, "title": "新概念英语", "author": "亚历山大", "category": "外语", "rating": 3 }
+]
