@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>足球场</title>
+    <script src="../libs/aframe.min-1.4.2.js"></script>
+</head>
+<body>
+    <a href="../index.html" style="position:fixed; top:12px; left:12px; z-index:999; color:#fff; background:rgba(0,0,0,0.5); padding:6px 12px; border-radius:4px; text-decoration:none;">← 返回首页</a>
+    <a-scene>
+        <a-sky color="#87ceeb"></a-sky>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="14" color="#2e7d32"></a-plane>
+
+        <a-box position="-9 1 0" width="0.2" height="2" depth="3" color="#f0f0f0"></a-box>
+        <a-box position="9 1 0" width="0.2" height="2" depth="3" color="#f0f0f0"></a-box>
+
+        <a-cylinder position="-3 1 2" radius="0.35" height="2" color="#e53935"></a-cylinder>
+        <a-sphere position="-3 2.35 2" radius="0.4" color="#e53935"></a-sphere>
+
+        <a-cylinder position="3 1 -2" radius="0.35" height="2" color="#1e88e5"></a-cylinder>
+        <a-sphere position="3 2.35 -2" radius="0.4" color="#1e88e5"></a-sphere>
+
+        <a-sphere position="0 0.4 0" radius="0.4" color="#ffffff)"></a-sphere>
+
+        <a-light type="ambient" color="#ffffff" intensity="0.7"></a-light>
+        <a-camera position="0 2 10"></a-camera>
+    </a-scene>
+</body>
+</html>
