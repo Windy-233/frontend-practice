@@ -1,3 +1,13 @@
-.card .card-title {
+.card-title {
   color: #0b5ed7;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
 }

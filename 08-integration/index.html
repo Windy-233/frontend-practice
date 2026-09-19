@@ -11,7 +11,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
-                <a class="navbar-brand" href="#homepage">迷你版校园信息中心</a>
+                <a class="navbar-brand" href="#homepage">校园信息中心</a>
                 <div class="navbar-nav">
                     <a class="nav-link active" href="#homepage">首页</a>
                     <a class="nav-link" href="#studyroom">自习室</a>
@@ -22,42 +22,37 @@
         </nav>
     </header>
     <main class="container">
-        <section id="home" class="mb-4">
-            <h1 class="h3"> 迷你版校园信息中心</h1>
-            <p class="text-muted">占位符</p>
+        <section id="homepage" class="mb-4">
+            <h1></h1>
             <div class="row g-3" id="summary-cards"></div>
         </section>
         <section id="studyroom" class="mb-4">
-      <h2 class="h5">自习室查询</h2>
-      <div class="row g-2 mb-3">
-        <div class="col-auto">
-          <label for="floor-filter" class="form-label">楼层</label>
-          <select id="floor-filter" class="form-select">
-            <option value="all">全部</option>
-            <option value="1">1层</option>
-            <option value="2">2层</option>
-            <option value="3">3层</option>
-            <option value="4">4层</option>
-          </select>
-        </div>
-        <div class="col-auto">
-          <label for="status-filter" class="form-label">状态</label>
-          <select id="status-filter" class="form-select">
-            <option value="all">全部</option>
-            <option value="开放">开放</option>
-            <option value="闭馆">闭馆</option>
-            <option value="维修">维修</option>
-          </select>
-        </div>
-      </div>
-      <ul id="room-list" class="list-group"></ul>
-    </section>
-        <section id="stats" class="container py-4">
-            <h2>统计</h2>
-            <p>占位符</p>
+            <h2 class="h5">自习室查询</h2>
+            <div class="row g-2 mb-3">
+                <div class="col-auto">
+                    <label for="floor-filter" class="form-label">楼层</label>
+                    <select id="floor-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="1">1层</option>
+                        <option value="2">2层</option>
+                        <option value="3">3层</option>
+                        <option value="4">4层</option>
+                    </select>
+                </div>
+                <div class="col-auto">
+                    <label for="status-filter" class="form-label">状态</label>
+                    <select id="status-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="开放">开放</option>
+                        <option value="闭馆">闭馆</option>
+                        <option value="维修">维修</option>
+                    </select>
+                </div>
+            </div>
+            <ul id="room-list" class="list-group"></ul>
         </section>
         <section id="stats" class="mb-4">
-            <h2 class="h5">使用统计（各自习室空余座位）</h2>
+            <h2 class="h5">统计</h2>
             <p id="status" class="alert alert-warning" style="display:none"></p>
             <div id="usage-chart" style="height:360px"></div>
         </section>
@@ -67,6 +62,7 @@
     </footer>
     <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
     <script src="libs/echarts.min.js"></script>
-    <script type="module" src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
