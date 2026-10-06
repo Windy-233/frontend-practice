@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft数据展示中心</title>
+    <link rel="stylesheet" href="libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Minecraft数据展示中心</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-label="展开导航">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active" href="index.html">首页</a>
+                        <a class="nav-link" href="mobs.html">生物图鉴</a>
+                        <a class="nav-link" href="modpacks.html">整合包介绍</a>
+                        <a class="nav-link" href="three-d.html">三维展示</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="site-header mb-4">
+            <h1>Minecraft数据展示中心</h1>
+            <p id="sub-title">正在加载站点说明</p>
+        </section>
+        <p id="status" class="alert alert-warning" style="display:none"></p>
+        <section class="mb-4">
+            <h2 class="h5">游戏内容</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="panel h-100">
+                        <h3 class="h6">创造模式</h3>
+                        <p class="text-muted">无限资源，随心所欲</p>
+                        <button type="button" class="btn btn-primary btn-detail" data-mode="creative">查看详情</button>
+                        <p class="mode-detail" id="detail-creative">
+                            创造模式（Creative）是《我的世界》主要模式之一，提供无限资源、飞行能力、无敌状态，并可瞬间破坏大多数方块。玩家不会受到生物攻击，生命值、饥饿值等界面会隐藏。可使用完整的创造物品栏，包含几乎所有方块与物品。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel h-100">
+                        <h3 class="h6">生存模式</h3>
+                        <p class="text-muted">全力求生，自由探索</p>
+                        <button type="button" class="btn btn-primary btn-detail" data-mode="survival">查看详情</button>
+                        <p class="mode-detail" id="detail-survival">
+                            生存模式（Survival Mode）是一种需要玩家收集资源、建造庇护所、对抗怪物并管理生命值与饥饿值的核心玩法模式。可选择击败末影龙、凋灵，或完成进度/成就。
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="panel h-100">
+                        <h3 class="h6">冒险模式</h3>
+                        <p class="text-muted">联系社区，挑战地图</p>
+                        <button type="button" class="btn btn-primary btn-detail" data-mode="adventure">查看详情</button>
+                        <p class="mode-detail" id="detail-adventure">
+                            冒险模式（Adventure Mode）是《我的世界》中主要用于自定义地图与服务器的游戏模式，玩家无法随意破坏或放置方块，只能使用带有 CanDestroy 或 CanPlaceOn 标签的工具或方块进行指定互动。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-4">
+            <h2 class="h5">数据概览</h2>
+            <div class="row g-3" id="summary-cards"></div>
+        </section>
+        <section class="mb-4">
+            <h2 class="h5">数据来源</h2>
+            <div class="panel source-list" id="source-list"></div>
+        </section>
+        <section class="mb-4">
+            <h2 class="h5">近年Minecraft累计销量（Chart.js折线图）</h2>
+            <div class="chart-box" id="sales-chart-box">
+                <canvas id="sales-chart"></canvas>
+            </div>
+            <div class="small text-muted" id="sales-source"></div>
+        </section>
+
+    </main>
+    <footer class="container py-4 text-center">
+        <p class="text-muted small mb-1">软件开发综合实践 期末大作业</p>
+        <p class="mb-1"><a href="login.html">返回登录页</a></p>
+    </footer>
+    <script src="libs/jquery-4.0.0.min.js"></script>
+    <script src="libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/chart.umd.min.js"></script>
+</body>
+
+</html>
