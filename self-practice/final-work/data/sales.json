@@ -1,0 +1,37 @@
+{
+    "title": "近年Minecraft累计销量",
+    "unit": "亿份",
+    "note": "数字来源是历年官方公布或者媒体报道的里程碑，不是逐年的精确统计",
+    "points": [
+        {
+            "year": "2016年",
+            "copies": 1.00,
+            "source": "IT之家：全球销量超过1亿份",
+            "url": "https://m.ithome.com/html/230487.htm"
+        },
+        {
+            "year": "2019年",
+            "copies": 1.76,
+            "source": "DualShockers：销量突破1.76亿份",
+            "url": "https://www.dualshockers.com/minecraft-176-million-copies-sold/"
+        },
+        {
+            "year": "2020年",
+            "copies": 2.00,
+            "source": "The Verge：销量突破2亿份",
+            "url": "https://www.theverge.com/2020/5/18/21262045/minecraft-sales-monthly-players-statistics-youtube"
+        },
+        {
+            "year": "2023年",
+            "copies": 3.00,
+            "source": "BBC：成为首个销量突破3亿份的游戏",
+            "url": "https://www.bbc.com/news/technology-67105983"
+        },
+        {
+            "year": "2026年",
+            "copies": 4.25,
+            "source": "GIGAZINE：销量超过4.25亿份",
+            "url": "https://gigazine.net/gsc_news/en/20260928-minecraft-300000-new-players-xbox"
+        }
+    ]
+}

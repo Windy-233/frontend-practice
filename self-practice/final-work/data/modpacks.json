@@ -1,0 +1,104 @@
+{
+    "title": "Minecraft整合包简介",
+    "source": "MC百科",
+    "sourceUrl": "https://www.mcmod.cn/",
+    "note": "下载次数为本人随机生成，仅供演示",
+    "modpacks": [
+        {
+            "name": "GregTech: New Horizons",
+            "type": "科技包",
+            "version": "1.7.10",
+            "downloads": 186,
+            "summary": "以格雷科技为核心的大型科技整合包，流程极长，被很多玩家称作工业党的毕业考试。",
+            "url": "https://search.mcmod.cn/s?key=GregTech%20New%20Horizons"
+        },
+        {
+            "name": "Create: Above and Beyond",
+            "type": "科技包",
+            "version": "1.16.5",
+            "downloads": 142,
+            "summary": "围绕机械动力做的科技整合包，靠齿轮和传送带搭自动化生产线，目标是把玩家送上月球。",
+            "url": "https://search.mcmod.cn/s?key=Create%20Above%20and%20Beyond"
+        },
+        {
+            "name": "SkyFactory 4",
+            "type": "空岛包",
+            "version": "1.12.2",
+            "downloads": 231,
+            "summary": "从一棵树和一块泥土开始，在虚空里把空岛一步步发展成完整的工业体系。",
+            "url": "https://search.mcmod.cn/s?key=SkyFactory%204"
+        },
+        {
+            "name": "StoneBlock 2",
+            "type": "空岛包",
+            "version": "1.12.2",
+            "downloads": 128,
+            "summary": "整张地图被石头填满，玩家要在石头里面挖出空间来发展，节奏和空岛包类似。",
+            "url": "https://search.mcmod.cn/s?key=StoneBlock%202"
+        },
+        {
+            "name": "RLCraft",
+            "type": "冒险包",
+            "version": "1.12.2",
+            "downloads": 305,
+            "summary": "加了一堆真实向模组，喝水、体温、受伤部位都会影响生存，难度很高，探索性很强。",
+            "url": "https://search.mcmod.cn/s?key=RLCraft"
+        },
+        {
+            "name": "Better Minecraft",
+            "type": "冒险包",
+            "version": "1.19.2",
+            "downloads": 167,
+            "summary": "在保留原版手感的前提下扩充了生物群系、结构和装备，适合当作长期生存的底包。",
+            "url": "https://search.mcmod.cn/s?key=Better%20Minecraft"
+        },
+        {
+            "name": "Vault Hunters",
+            "type": "冒险包",
+            "version": "1.18.2",
+            "downloads": 96,
+            "summary": "以刷宝为核心，玩家要反复进入随机生成的宝库房间打怪拿装备，再出来变强。",
+            "url": "https://search.mcmod.cn/s?key=Vault%20Hunters"
+        },
+        {
+            "name": "SevTech: Ages",
+            "type": "冒险包",
+            "version": "1.12.2",
+            "downloads": 104,
+            "summary": "按时代划分进度，从石器时代一路发展到太空时代，每个时代解锁一批新内容。",
+            "url": "https://search.mcmod.cn/s?key=SevTech%20Ages"
+        },
+        {
+            "name": "All the Mods 6",
+            "type": "综合包",
+            "version": "1.16.5",
+            "downloads": 214,
+            "summary": "收录了三百多个模组的综合包，科技、魔法、探索和建筑都包含在内。",
+            "url": "https://search.mcmod.cn/s?key=All%20the%20Mods%206"
+        },
+        {
+            "name": "FTB Infinity Evolved",
+            "type": "综合包",
+            "version": "1.7.10",
+            "downloads": 153,
+            "summary": "早期最有名的综合整合包之一，把科技和魔法两条线都做得比较完整。",
+            "url": "https://search.mcmod.cn/s?key=FTB%20Infinity%20Evolved"
+        },
+        {
+            "name": "Enigmatica 2: Expert",
+            "type": "专家包",
+            "version": "1.12.2",
+            "downloads": 118,
+            "summary": "把合成表全部改复杂，需要跨模组协作才能往下推进的专家难度整合包。",
+            "url": "https://search.mcmod.cn/s?key=Enigmatica%202%20Expert"
+        },
+        {
+            "name": "Divine Journey 2",
+            "type": "专家包",
+            "version": "1.12.2",
+            "downloads": 87,
+            "summary": "以进度推进为主线的专家包，合成表环环相扣，适合喜欢提前规划的玩家。",
+            "url": "https://search.mcmod.cn/s?key=Divine%20Journey%202"
+        }
+    ]
+}

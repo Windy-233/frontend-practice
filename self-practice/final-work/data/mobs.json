@@ -1,0 +1,103 @@
+{
+    "title": "我的世界生物数据",
+    "source": "Minecraft Wiki",
+    "sourceUrl": "https://zh.minecraft.wiki/",
+    "mobs": [
+        {
+            "name": "僵尸",
+            "dimension": "主世界",
+            "category": "敌对",
+            "health": 20
+        },
+        {
+            "name": "骷髅",
+            "dimension": "主世界",
+            "category": "敌对",
+            "health": 20
+        },
+        {
+            "name": "苦力怕",
+            "dimension": "主世界",
+            "category": "敌对",
+            "health": 20
+        },
+        {
+            "name": "蜘蛛",
+            "dimension": "主世界",
+            "category": "敌对",
+            "health": 16
+        },
+        {
+            "name": "女巫",
+            "dimension": "主世界",
+            "category": "敌对",
+            "health": 26
+        },
+        {
+            "name": "末影人",
+            "dimension": "主世界",
+            "category": "中立",
+            "health": 40
+        },
+        {
+            "name": "铁傀儡",
+            "dimension": "主世界",
+            "category": "中立",
+            "health": 100
+        },
+        {
+            "name": "村民",
+            "dimension": "主世界",
+            "category": "友好",
+            "health": 20
+        },
+        {
+            "name": "羊",
+            "dimension": "主世界",
+            "category": "友好",
+            "health": 8
+        },
+        {
+            "name": "鸡",
+            "dimension": "主世界",
+            "category": "友好",
+            "health": 4
+        },
+        {
+            "name": "僵尸猪灵",
+            "dimension": "下界",
+            "category": "中立",
+            "health": 20
+        },
+        {
+            "name": "烈焰人",
+            "dimension": "下界",
+            "category": "敌对",
+            "health": 20
+        },
+        {
+            "name": "恶魂",
+            "dimension": "下界",
+            "category": "敌对",
+            "health": 10
+        },
+        {
+            "name": "猪灵",
+            "dimension": "下界",
+            "category": "中立",
+            "health": 16
+        },
+        {
+            "name": "潜影贝",
+            "dimension": "末地",
+            "category": "敌对",
+            "health": 30
+        },
+        {
+            "name": "末影龙",
+            "dimension": "末地",
+            "category": "敌对",
+            "health": 200
+        }
+    ]
+}
