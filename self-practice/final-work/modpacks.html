@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>整合包介绍 - Minecraft数据展示中心</title>
+    <link rel="stylesheet" href="libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Minecraft数据展示中心</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-label="展开导航">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">首页</a>
+                        <a class="nav-link" href="mobs.html">生物图鉴</a>
+                        <a class="nav-link active" href="modpacks.html">整合包介绍</a>
+                        <a class="nav-link" href="three-d.html">三维展示</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="site-header mb-4">
+            <h1>整合包介绍</h1>
+            <p>按类型或者名称筛选</p>
+        </section>
+        <p id="status" class="alert alert-warning" style="display:none"></p>
+        <section class="panel mb-4">
+            <div class="row g-2 mb-3">
+                <div class="col-md-6">
+                    <label for="search-input" class="form-label">按名称搜索</label>
+                    <input type="text" id="search-input" class="form-control" placeholder="例如：科技">
+                </div>
+                <div class="col-md-6">
+                    <label for="type-filter" class="form-label">类型</label>
+                    <select id="type-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="科技包">科技包</option>
+                        <option value="冒险包">冒险包</option>
+                        <option value="空岛包">空岛包</option>
+                        <option value="综合包">综合包</option>
+                        <option value="专家包">专家包</option>
+                    </select>
+                </div>
+            </div>
+            <p class="text-muted mb-1" id="count-tip"></p>
+        </section>
+        <section class="mb-4">
+            <h2 class="h5">整合包列表</h2>
+            <div id="pack-list"></div>
+        </section>
+        <section class="mb-4">
+            <h2 class="h5">各类型整合包下载次数统计（ECharts柱状图）</h2>
+            <div class="chart-box" id="pack-chart"></div>
+            <p class="text-muted small mb-1">下载次数为本人随机生成，仅供演示</p>
+        </section>
+
+    </main>
+    <footer class="container py-4 text-center">
+        <p class="text-muted small mb-1">软件开发综合实践 期末大作业 数据来源：MC百科</p>
+    </footer>
+    <script src="libs/jquery-4.0.0.min.js"></script>
+    <script src="libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/echarts.min.js"></script>
+    <script src="js/modpacks.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,5 @@
 {
     "title": "Minecraft整合包简介",
-    "source": "MC百科",
-    "sourceUrl": "https://www.mcmod.cn/",
-    "note": "下载次数为本人随机生成，仅供演示",
     "modpacks": [
         {
             "name": "GregTech: New Horizons",
