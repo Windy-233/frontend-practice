@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生物图鉴 - Minecraft信息与数据展示中心</title>
+    <link rel="stylesheet" href="libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Minecraft数据展示中心</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="展开导航">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="index.html">首页</a>
+                        <a class="nav-link active" href="mobs.html">生物图鉴</a>
+                        <a class="nav-link" href="modpacks.html">整合包介绍</a>
+                        <a class="nav-link" href="three-d.html">三维展示</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="site-header mb-4">
+            <h1>生物图鉴</h1>
+            <p>按名称搜索，按维度和类别筛选，点击高亮</p>
+        </section>
+        <p id="status" class="alert alert-warning" style="display:none"></p>
+        <section class="panel mb-4">
+            <div class="row g-2 mb-3">
+                <div class="col-md-4">
+                    <label for="search-input" class="form-label">按名称搜索</label>
+                    <input type="text" id="search-input" class="form-control" placeholder="例如：僵尸">
+                </div>
+                <div class="col-md-4">
+                    <label for="dimension-filter" class="form-label">维度</label>
+                    <select id="dimension-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="主世界">主世界</option>
+                        <option value="下界">下界</option>
+                        <option value="末地">末地</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="category-filter" class="form-label">类别</label>
+                    <select id="category-filter" class="form-select">
+                        <option value="all">全部</option>
+                        <option value="敌对">敌对</option>
+                        <option value="中立">中立</option>
+                        <option value="友好">友好</option>
+                    </select>
+                </div>
+            </div>
+            <p class="text-muted mb-1" id="count-tip"></p>
+        </section>
+        <section class="mb-4">
+            <h2 class="h5">生物列表</h2>
+            <div id="mob-list"></div>
+        </section>
+        <section class="panel mb-4">
+            <h2 class="h5">添加生物</h2>
+            <form id="add-form" class="row g-2">
+                <div class="col-md-3">
+                    <label for="name-input" class="form-label">名称</label>
+                    <input type="text" id="name-input" class="form-control" placeholder="例如：雪傀儡">
+                </div>
+                <div class="col-md-3">
+                    <label for="health-input" class="form-label">血量</label>
+                    <input type="text" id="health-input" class="form-control" placeholder="例如：20">
+                </div>
+                <div class="col-md-2">
+                    <label for="new-dimension" class="form-label">维度</label>
+                    <select id="new-dimension" class="form-select">
+                        <option value="主世界">主世界</option>
+                        <option value="下界">下界</option>
+                        <option value="末地">末地</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="new-category" class="form-label">类别</label>
+                    <select id="new-category" class="form-select">
+                        <option value="敌对">敌对</option>
+                        <option value="中立">中立</option>
+                        <option value="友好">友好</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">添加</button>
+                </div>
+            </form>
+            <p class="text-danger mb-1" id="tip"></p>
+        </section>
+    </main>
+    <footer class="container py-4 text-center">
+        <p class="text-muted small mb-1">软件开发综合实践 期末大作业 数据来源：Minecraft Wiki</p>
+    </footer>
+    <script src="libs/jquery-4.0.0.min.js"></script>
+    <script src="libs/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/mobs.js"></script>
+</body>
+
+</html>
