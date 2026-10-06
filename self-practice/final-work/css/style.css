@@ -1,0 +1,93 @@
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background-color: #f2f6ec;
+    color: #2b2b2b;
+}
+
+.site-header {
+    background-color: #3f6b2b;
+    color: #ffffff;
+    padding: 24px 20px;
+    border-radius: 8px;
+}
+
+.site-header h1 {
+    font-size: clamp(22px, 4vw, 34px);
+}
+
+.site-header p {
+    color: #d8e8c8;
+    margin-bottom: 0;
+}
+
+.panel {
+    background-color: #ffffff;
+    border: 1px solid #d7e3c8;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.summary-value {
+    font-size: 26px;
+    color: #3f6b2b;
+    margin-bottom: 0;
+}
+
+.chart-box {
+    height: 420px;
+    background-color: #ffffff;
+    border: 1px solid #d7e3c8;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.mode-detail {
+    display: none;
+    margin-top: 12px;
+    margin-bottom: 0;
+    color: #4a5a3c;
+}
+
+.list-row {
+    background-color: #ffffff;
+    border: 1px solid #e2ebd6;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+}
+
+.row-active {
+    border-color: #3f6b2b;
+    background-color: #eef5e4;
+}
+
+.tag {
+    background-color: #e8f0dc;
+    color: #3f6b2b;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+.tag-alt {
+    background-color: #f0e6d8;
+    color: #8a5a2b;
+}
+
+.del {
+    cursor: pointer;
+}
+
+.source-list a {
+    color: #3f6b2b;
+}
+
+.pack-link a {
+    color: #3f6b2b;
+}
+
+footer {
+    color: #6b7a5f;
+    font-size: 14px;
+}

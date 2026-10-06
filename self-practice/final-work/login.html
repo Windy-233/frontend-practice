@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - Log in</title>
+    <link rel="stylesheet" href="libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container py-4">
+        <section class="site-header mb-4">
+            <h1>Minecraft游戏介绍</h1>
+            <p>登录之后可以查看详细内容</p>
+        </section>
+        <section class="panel mb-4">
+            <h2 class="h5">填写说明</h2>
+            <details>
+                <summary>点击展开或收起</summary>
+                <p class="mb-1">用户名和邮箱随便填即可，不会被上传到任何地方。</p>
+                <p class="mb-1">密码要求6到20位。三项都填对之后点登录按钮，会跳转到主网站界面</p>
+            </details>
+        </section>
+        <section class="panel mb-4">
+            <h2 class="h5">登录</h2>
+            <form action="index.html" method="get">
+                <div class="row g-2">
+                    <div class="col-12">
+                        <label for="name" class="form-label">用户名或昵称</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="例如：史蒂夫" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="mail" class="form-label">邮箱地址</label>
+                        <input type="email" id="mail" name="mail" class="form-control"
+                            placeholder="例如：steve@example.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="password" class="form-label">密码</label>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="6到20位"
+                            minlength="6" maxlength="20" required>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">登录并进入</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <footer class="py-4 text-center">
+            <p class="text-muted small mb-1">软件开发综合实践 期末大作业</p>
+        </footer>
+    </div>
+</body>
+</html>
